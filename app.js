@@ -22,8 +22,8 @@ viewer.scene.skyAtmosphere.show = true;
 
 // Add a rotation animation
 const spinRate = 1.0; // radians per second
-viewer.clock.onTick.addEventListener(function (clock) {
-    const delta = viewer.clock.tickDuration;
+viewer.clock.onTick.addEventListener(function () {
+    const delta = viewer.clock.elapsedTime;
     viewer.scene.camera.rotate(Cesium.Cartesian3.UNIT_Z, -spinRate * delta);
 });
 
