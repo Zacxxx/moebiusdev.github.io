@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moebius Dev</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Assurez-vous que le fichier styles.css existe -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -17,15 +17,14 @@
         </nav>
     </header>
     <main>
-        <section>
-            <h1>Bienvenue sur Moebius Dev</h1>
-            <p>Ce site est en cours de développement. Restez à l'écoute pour plus de mises à jour !</p>
-            <p>Pour plus d'informations, visitez notre <a href="https://github.com/Zacxxx/moebiusdev.github.io" target="_blank">GitHub</a>.</p>
-        </section>
+        <div id="root"></div> <!-- Point de montage pour React -->
     </main>
     <footer>
         <p>&copy; 2024 Moebius Dev. Tous droits réservés.</p>
     </footer>
-    <script src="script.js"></script> <!-- Assurez-vous que le fichier script.js existe -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.0.0/umd/react.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.0.0/umd/react-dom.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.15.7/babel.min.js"></script>
+    <script type="text/babel" src="script.js"></script>
 </body>
 </html>
